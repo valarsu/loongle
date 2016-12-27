@@ -3,9 +3,29 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/onepage-scroll.css">
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/jquery.onepage-scroll.min.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+    <div class="main">
+      <section style="background: #1bbc9b">
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %></p>
+      </section>
+      <section style="background: #FF7F50">第二屏</section>
+      <section style="background: #4BBFC3">第三屏</section>
+      <section style="background: #f90">第四屏</section>
+    </div>
+
+
   </body>
 </html>
+<script>
+    $(function(){
+        $('.main').onepage_scroll({
+            'easing': 'ease'
+        });
+    });
+</script>
