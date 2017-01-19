@@ -371,8 +371,10 @@
 	text-align: center;
 }
 .camera_thumbs_cont ul li {
-	display: inline;
+	display: inline-block;
 	padding-right: 3px;
+	width: 186px;
+	height: 100px;
 }
 .camera_thumbs_cont ul li:nth-child(6)
 {
@@ -382,6 +384,8 @@
 	cursor: pointer;
 	margin-top: 5px;
 	vertical-align:bottom;
+	width: 100%;
+	height: 100%;
 }
 .camera_clear {
 	display: block;
